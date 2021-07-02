@@ -15,7 +15,7 @@ resource "aws_lambda_function" "example" {
 
    # The bucket name as created earlier with "aws s3api create-bucket"
    s3_bucket = var.s3_bucket
-   s3_key    = "example.zip"
+   s3_key    = "v1.0.0/example.zip"
 
    # "main" is the filename within the zip file (main.js) and "handler"
    # is the name of the property under which the handler function was
